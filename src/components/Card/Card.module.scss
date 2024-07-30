@@ -1,0 +1,56 @@
+.card {
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.05);
+  }
+  margin: 10px 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 188px;
+  height: 260px;
+  border-radius: 40px;
+  border: 1px solid rgb(59, 59, 59);
+  p {
+    flex: 1;
+  }
+  .fav {
+    position: absolute;
+  }
+  .heartImg {
+    background: #fff;
+    cursor: pointer;
+  }
+  .img {
+    margin: auto;
+  }
+  .cardBottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    span {
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(189, 189, 189, 1);
+    }
+    p {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0;
+    }
+    .plus {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid rgb(242, 242, 242);
+      cursor: pointer;
+    }
+  }
+}
